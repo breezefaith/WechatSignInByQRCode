@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <title>网页加载中...</title>
+    <!--
+    <script type="text/javascript" src="http://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src='http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js'></script>
+    <script src="base64.min.js"></script>-->
+    <script src='//cdn.bootcss.com/jquery/3.1.1/jquery.min.js'></script>
+    <script src='//cdn.bootcss.com/socket.io/1.5.0/socket.io.min.js'></script>
+    <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <!----><script src="js/jquery.min.js"></script>
+    <script src="js/socket.io.min.js"></script>
+    <script src="js/jquery.qrcode.min.js"></script>
+    <script src="webqr.js"></script>
+    <link rel="stylesheet" type="text/css" href="webqr.css">
+</head>
+<body bgcolor="#c1c8cd" ><!--1b033c-->
+<div class="block" id="block">
+<div class="blur" id="blur"></div>
+</div>
+<div class="boxDom" id="boxDom">
+    <div id="showman" class="show"></div>
+    <div class="login_box" id="login_box">
+        <div class="qrcode">
+            <div id="qr" class="img"></div>
+            <div id="login_info"></div>
+            <div id="msg">
+            <h4>微信二维码登录</h4>
+            <p>打开手机微信</p>
+            <p>进入“二维码签到”公众号</p>
+            <p>点击左下角“扫码签到”菜单扫码登录</p>
+            </div>
+            <div id="help">
+            <a href="#" id="view-fullscreen"></a>
+            <a href="#" id="cancel-fullscreen"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+main();
+</script>
+</body>
+</html>
